@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+
+section{
+    box-sizing: border-box;
+    height: 90%;
+    width: 87.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    overflow: hidden;
+}
+
+.daniel{
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+    grid-column: 1/3;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+img{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #fff;
+    float: left;
+    border-width: .2rem;
+}
+
+.daniel div{
+    position: relative;
+    left: .5rem;
+}
+
+.daniel div h6, .daniel p, .jonathan div h6, .jonathan p{
+    opacity: 70%;
+}
+
+h4{
+    position: relative;
+    top: 1rem;
+    display: inline;
+}
+
+h6{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.jonathan{
+    color:  #fff;
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.jonathan div{
+    position: relative;
+    left: .5rem;
+}
+
+.jeanette{
+    color: hsl(217, 19%, 35%);
+    height: 90%;
+    font-size: 1rem;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-right: 3rem;
+}
+
+.jeanette div{
+    position: relative;
+    left: .5rem;
+}
+
+.jeanette div h6{
+    opacity: 50%;
+}
+
+.jeanette p{
+    opacity: 70%;
+}
+
+.patrick{
+    color: #fff;
+    background-color:  hsl(219, 29%, 14%);
+    grid-row: 2/3;
+    grid-column: 2/4;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.patrick div{
+    position: relative;
+    left: .5rem;
+}
+
+.patrick div h6{
+    opacity: 50%;
+}
+
+.patrick p{
+    opacity: 70%;
+}
+
+.patrick img{
+    border-color: hsl(263, 55%, 52%);
+}
+
+.kira{
+    color: hsl(217, 19%, 35%);
+    grid-column: 4/5;
+    grid-row: 1/3;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.kira div h6{
+    opacity: 50%;
+}
+
+.kira p{
+    opacity: 70%;
+}
+
+.kira div{
+    position: relative;
+    left: .5rem;
+}
+
+@media(max-width:768px){
+
+    section{
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .daniel{
+        background-position-x: 32.5rem;
+    }
+}
+
+@media (max-width:425px) {
+    .daniel{
+        background-position-x: 13rem;
+    }
+}
+
+@media (max-width:375px) {
+    .daniel{
+        background-position-x: 10rem;
+    }
+}
+
+@media (max-width:320px) {
+    .daniel{
+        background-position-x: 9rem;
+    }
+}
